@@ -1,17 +1,20 @@
 import { MinusIcon, Plus, X } from "lucide-react";
 
+import {
+  Quit,
+  WindowToggleMaximise,
+  WindowMinimise,
+} from "../../../../wailsjs/runtime";
+
 const Variants = {
-  //@ts-expect-error
-  Close: { element: <X size={16} />, function: () => window.runtime.Quit() },
+  Close: { element: <X size={16} />, function: () => Quit() },
   ToggleMaximise: {
     element: <Plus size={16} />,
-    //@ts-expect-error
-    function: () => window.runtime.WindowToggleMaximise(),
+    function: () => WindowToggleMaximise(),
   },
   Minimise: {
     element: <MinusIcon size={16} />,
-    //@ts-expect-error
-    function: () => window.runtime.WindowMinimise(),
+    function: () => WindowMinimise(),
   },
 };
 
