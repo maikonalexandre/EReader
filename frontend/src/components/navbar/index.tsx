@@ -17,6 +17,11 @@ export function Navbar() {
       >
         <div className="flex gap-1">
           <Button type="Library" onClick={() => navigate("/")} />
+          <Button
+            type="BookPlus"
+            data-reading={location.pathname != "/"}
+            className="p-1 rounded-md data-[reading=true]:hidden hover:bg-zinc-700"
+          />
           <Catalog />
         </div>
         <Title />

@@ -7,12 +7,7 @@ export function ConfigDialog() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button
-          type="MoreVertical"
-          onClick={() => {
-            navigate("/config");
-          }}
-        />
+        <Button type="MoreVertical" />
       </DialogTrigger>
 
       <DialogContent>
