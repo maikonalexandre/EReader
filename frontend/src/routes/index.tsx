@@ -3,31 +3,31 @@ import { Home } from "../pages/home";
 import { Read } from "../pages/read";
 import { Config } from "../pages/config";
 import { Children } from "react";
-import { Container } from "../components/window";
+import { Window } from "../components/window";
 
 export const router = createHashRouter([
   {
     path: "/",
     element: (
-      <Container>
+      <Window>
         <Home />
-      </Container>
+      </Window>
     ),
   },
   {
     path: "read",
     element: (
-      <Container>
+      <Window>
         <Read />
-      </Container>
+      </Window>
     ),
   },
   {
     path: "config",
     element: (
-      <Container>
+      <Window>
         <Config />
-      </Container>
+      </Window>
     ),
   },
 ]);
