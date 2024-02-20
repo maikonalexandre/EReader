@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
-import { Frame } from "../frame";
+import { Navbar } from "../navbar";
 
-export function Container({ children }: { children: ReactNode }) {
+export function Window({ children }: { children: ReactNode }) {
   return (
     <div>
-      <Frame />
+      <Navbar />
       <div className="p-4">{children}</div>
     </div>
   );

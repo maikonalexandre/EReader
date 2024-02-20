@@ -12,7 +12,7 @@ import { FrameAction } from "./action";
 import { Title } from "./title";
 import { Catalog } from "./catalog";
 
-export function Frame() {
+export function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
 

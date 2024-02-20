@@ -3,7 +3,7 @@ import { Home } from "../pages/home";
 import { Read } from "../pages/read";
 import { Config } from "../pages/config";
 import { Children } from "react";
-import { Container } from "../components/container";
+import { Container } from "../components/window";
 
 export const router = createHashRouter([
   {
