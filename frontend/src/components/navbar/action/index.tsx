@@ -15,7 +15,7 @@ const Variants = {
   },
 };
 
-interface ActionProps {
+interface ActionProps extends React.HTMLProps<HTMLButtonElement> {
   type: keyof typeof Variants;
 }
 
